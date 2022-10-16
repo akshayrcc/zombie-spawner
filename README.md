@@ -9,7 +9,7 @@
 1. Akshay Ram Chaudhari : akshayrc@csu.fullerton.edu
 2. Sambhaji Ippar: Sambhaji@csu.fullerton.edu
 3. Onkar : @csu.fullerton.edu
-4. Meet : @csu.fullerton.edu
+4. Meet Turakhia : meet.turakhia@csu.fullerton.edu
 
 ## Professor
 
