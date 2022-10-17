@@ -5,31 +5,20 @@
 
 body {
   /* overflow: hidden; */
-  font-family: comic-neue;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
 }
 
-.zombie-preview {
-  height: 95vh;
-  width: 55vh;
-  background-size: cover;
-  background-image: url(https://cryptozombies.io/course/static/img/lesson-complete-bg.png);
-  margin: 0 8rem;
+.wholescreen {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("img/halloween_1.jpg"); */
+  background-image: url("img/halloween_2.jpg");
+  /* background-image: url("https://wallpaperset.com/w/full/0/d/9/389812.jpg"); */
+  /* background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-hand-drawn-cartoon-horror-halloween-background-picture-image_975453.jpg"); */
+  background-size: auto;
 }
-
-.cta-buttons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.list-group-item {
-  border: 1px solid #2194a3;
-  color: #ff957f;
-}
-
-.badge-pill {
-  border-radius: 0.6rem;
-}
-
 .badge {
   padding: 0.45em 0.7em;
   font-size: 80%;
@@ -77,4 +66,26 @@ body {
   left: -58px;
   z-index: 9;
   opacity: 1;
+}
+
+.zombie-preview {
+  height: 95vh;
+  width: 55vh;
+  background-size: cover;
+  /* background-image: url("img/halloween_1.jpg"); */
+  margin: 0 8rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-group-item {
+  border: 1px solid #2194a3;
+  color: #ff957f;
+}
+
+.badge-pill {
+  border-radius: 0.6rem;
 }

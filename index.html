@@ -10,12 +10,13 @@
   <title>CryptoZombies User Interface</title>
   
   <link rel="icon" href="favicon.ico">
-  <link rel="shortcut icon" href=https://cryptozombies.io/course/favicon.ico>
+  <link rel="shortcut icon" href="img/zombie-logo.ico">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="custom-style.css">
   <link rel="stylesheet" href=https://cryptozombies.io/course/static/css/app.d503cb1aa8add67a90cc368a27b135a2.css >
 
+  <script language="javascript" type="text/javascript" src="script.js"></script>
   <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
   <script language="javascript" type="text/javascript" src="cryptozombies_abi.js"></script>
@@ -36,27 +37,48 @@
     <div class="overlay"></div>
     <div class="loading">
       <img
-        src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw340"
+        src="img/Spinner-3.gif"
         alt="" class="loading-png" > 
     </div>
   </div>
-  <div data-v-41b3c7d8="" id="app">
+  <div id="app">
     <!---->
-    <div data-v-0dbaae9e="" data-v-41b3c7d8="" id="navbar">
-      <nav data-v-0dbaae9e="" class="navbar navbar-dark navbar-expand-md mobile-nav">
-        <div data-v-0dbaae9e="" class="navbar-fullwidth"><a data-v-0dbaae9e="" href="/en/course" target="_self"
-            class="navbar-brand logotype"><img data-v-0dbaae9e=""
-              src="data:image/png;base64,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"
-              alt="">
-            Team Zombie Spawner
+    <div  id="navbar">
+      <nav  class="navbar navbar-light navbar-expand-md mobile-nav bg-light">
+        <div data-v-0dbaae9e="" class="navbar-fullwidth"><a href="https://github.com/akshaychaudhari/ZombieSpawner" target="_self"
+            class="navbar-brand logotype">
+            <h1 style="color:purple; "><img src="img/zombie-logo.png" height="50" weight="50"  alt=""/>Team Zombie Spawner</h1>
           </a>
           <button data-v-0dbaae9e=""
             onclick="window.open(`https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/102442290240268602428752935257933529200693348925534355824082065762530734637057/`, '_blank');"
-            type="button" class="btn btn-outline-primary" style="overflow-anchor: none;">See NFT</button>
+            type="button" class="btn btn-outline-primary" style="overflow-anchor: none;">Checkout our NFT</button>
         </div>
       </nav>
     </div>
-    <div data-v-64161a65="" data-v-41b3c7d8="">
+
+    <!-- Navbar start -->
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <button class="showZombieButton btn btn-success" type="button">Show Zombies</button>
+          <button class="createzombieButton btn btn-info" type="button">Create Zombie</button>
+          <button class="levelupButton btn btn-danger" type="button">Level Up</button>
+        </div>
+
+        <div class="d-flex align-items-center">
+
+        <input type="text" class="form-control kittynum m-3" id="kn"/>
+        <button id="show-kitty" class="btn btn-success">Show Kitty</button>
+        <button id="eat-kitty" class="btn btn-danger">Eat Kitty</button>
+        </div>
+        
+      </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+    <div >
       <div data-v-64161a65="" class="container-fluid">
         <div data-v-64161a65="" class="row chapter-sidebar-container">
 
@@ -65,21 +87,27 @@
             <div data-v-64161a65="" class="h-100 mx-auto pl-0"
               style="display: block; height: 100%; width: calc(100% + 17px);">
           
-              <div data-v-4460fc7e="" data-v-64161a65="" class="zombie-parts-bin-component row"
-                materialdata="[object Object]" chaptercontent="" lessonidx="6">
+              <div data-v-4460fc7e="" data-v-64161a65="" class="row wholescreen" chaptercontent="" lessonidx="6">
           
-                <div data-v-37829458="" class="zombie-preview ">
+              <!-- CrytoKitty Block -->
+              <div class="card course-info-content text-white bg-shaded" id="card-content">
+                <div class="text-center" style="margin:5%;border: 2px solid; border-color: navy;height: 40vh;"><img class="cryptokitty" style="width:90%" /></div>
+              </div>
+
+              <div class="zombie-preview ">
+                <!-- <div data-v-37829458="" class="zombie-preview "> -->
                   <div data-v-3614808b="" data-v-4460fc7e="" class="zombie-char">
                     <div data-v-3614808b="" class="zombie-loading zombie-parts" style="display: none;"></div>
                     <div data-v-3614808b="" class="level-anim" style="display: none;">
-                      <img data-v-3614808b="" src="https://thumbs.gfycat.com/AnyCarefulCrustacean-max-1mb.gif"
-                        class="level-up" style="filter: hue-rotate(55.4deg);">
+                      <img data-v-3614808b="" src="img/Rocket.gif"
+                        class="level-up" style="filter: hue-rotate(68.4deg);">
                     </div>
+                    
 
                     <!-- Using the exising CryptoZombies data we are creating our Zombie Model -->
 
-                    <div data-v-3614808b="" class="zombie-parts head-visible-4  shirt-visible-2 eye-part-11 " style="">
-                      
+                    <div data-v-3614808b="" class="zombie-parts head-visible-4  shirt-visible-2 eye-part-11">
+                    
                       <img
                         data-v-3614808b=""
                         src="data:image/png;base64,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"
@@ -169,46 +197,15 @@
                         class="mouth">
                     </div>
 
-                    <div data-v-3614808b="" class="zombie-card card bg-shaded">
-                      <div data-v-3614808b="" class="card-header  hide-overflow-text">
-                        <strong data-v-3614808b="">Zombie Spawner</strong>
-                      </div> <small data-v-3614808b="" class="hide-overflow-text p-3">
-                        A Crypto Zombie</small>
+                    <div class="  hide-overflow-text zombie-card ">
+                      <h3>Zombie Spawner: A Crypto Zombie</h3>
                     </div>
                     <div id="notify-level"></div>
+
+
                   </div>
                 </div>
-                <div data-v-4460fc7e="" class="course-info col mt-lg-4 pt-lg-5 ml-lg-4 col-lg-5">
 
-                  <div data-v-4460fc7e="" id="zombies" class="card course-info-content text-white bg-shaded p-5"
-                    style="display: none;">
-                  </div>
-
-                  <div class="card course-info-content text-white bg-shaded" id="card-content">
-                    <!-- <div class="card-header">Select the Action</div> -->
-                    <div class="card-body">
-                      <div class="cta-buttons m-1 onload">
-                        <button class="showZombieButton btn btn-success" type="button">Show Zombies</button>
-                        <button class="createzombieButton btn btn-info" type="button">Create Zombie</button>
-                        <button class="levelupButton btn btn-danger" type="button">Level Up</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- CrytoKitty Block -->
-                  <div class="card course-info-content text-white bg-shaded" id="card-content">
-                    <!-- <div class="card-header">Select the Action</div> -->
-                    <div class="card-body">
-                      <div class="cryptokittyBlock text-center m-1">
-                        <input type="text" class="form-control kittynum m-1" id="kn" />
-                        <button id="show-kitty" class="btn btn-success m-1">Show Kitty</button>
-                        <button id="eat-kitty" class="btn btn-danger m-1">Eat Kitty</button>
-                        <div class="text-center" style="margin:5%;border: 2px solid; border-color: navy: 70;height: 40vh;"><img class="cryptokitty" style="width:90%" /></div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
               </div>
             </div>
           </div>
@@ -227,7 +224,6 @@
   <button class="createzombieButton">Create Zombie</button>
   <button class="levelupButton">Level Up</button> -->
 
-  <script language="javascript" type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

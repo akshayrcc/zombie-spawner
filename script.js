@@ -6,20 +6,22 @@ const levelupButton = document.querySelector('.levelupButton');
 const cryptokitty = document.querySelector('.cryptokitty');
 
 
-$("#show-kitty").click(function () {
+// $("#show-kitty").click(function () {
 
-    let apiUrl = "https://api.cryptokitties.co/kitties/" + $("#kn").val()
-    $.get(apiUrl, function (data) {
-        let imgUrl = data.image_url
-        $(".cryptokitty").attr("src", imgUrl);
+//     let apiUrl = "https://api.cryptokitties.co/kitties/" + $("#kn").val()
+//     $.get(apiUrl, function (data) {
+//         let imgUrl = data.image_url
+//         $(".cryptokitty").attr("src", imgUrl);
 
-        // do something to display the image
-    })
-});
+//         // do something to display the image
+//     })
+// });
 
 function startApp() {
     //ZombieOwnership contratc address
-    var cryptoZombiesAddress = "0xC08d276D3022F1E9E1e99eBAa6410fE4FcbEcB8f";
+    // var cryptoZombiesAddress = "0xC08d276D3022F1E9E1e99eBAa6410fE4FcbEcB8f";
+    var cryptoZombiesAddress = "0x7CCdA894E182fC8b42a00b205E647051319AD805";
+
     cryptoZombies = new web3.eth.Contract(cryptoZombiesABI, cryptoZombiesAddress);
     cryptoZombies.events.Transfer({ filter: { _to: userAccount } })
         .on("data", function (event) {
@@ -247,4 +249,5 @@ cryptokitty.addEventListener('click', () => {
         .then(setKittyContractAddress(cryptoZombiesAddress))
         .then(feedOnKitty(1, 1));
 });
+
 
