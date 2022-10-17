@@ -26,9 +26,6 @@ Prof. Wenlin Han, CSU Fullerton: whan@fullerton.edu
 6. Added NFT on the Marketplace. [Link] (https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/102442290240268602428752935257933529200693348925534355824082065762530734637057)
 7. Listed NFT for sell on opensea.
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
 
 
 ## Project Repo URL
