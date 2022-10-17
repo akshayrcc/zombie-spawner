@@ -3,6 +3,7 @@
 ## Mid Term Project
 
 ## By Team ZombieSpawner
+![Logo](https://i.ibb.co/SwkN3mq/logo-no-background.png)
 
 ## Team members:
 
