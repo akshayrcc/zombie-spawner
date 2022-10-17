@@ -1,0 +1,80 @@
+@font-face {
+  font-family: comic-neue;
+  src: url(./font-family/ComicNeue-Regular.ttf);
+}
+
+body {
+  /* overflow: hidden; */
+  font-family: comic-neue;
+}
+
+.zombie-preview {
+  height: 95vh;
+  width: 55vh;
+  background-size: cover;
+  background-image: url(https://cryptozombies.io/course/static/img/lesson-complete-bg.png);
+  margin: 0 8rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-group-item {
+  border: 1px solid #2194a3;
+  color: #ff957f;
+}
+
+.badge-pill {
+  border-radius: 0.6rem;
+}
+
+.badge {
+  padding: 0.45em 0.7em;
+  font-size: 80%;
+}
+
+#notify-level {
+  position: absolute;
+  top: 330px;
+  left: 20px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  z-index: 9;
+  opacity: 0.5;
+}
+
+.loading {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  z-index: 99999;
+}
+
+#txStatus {
+  background: transparent;
+  position: absolute;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-shadow: -1px 0 #fff, 0 1px #2b2929, 1px 0 #f4f4f4, 0 -1px #f7f7f7;
+  font-family: cursive;
+  z-index: 9999;
+  top: 18%;
+  left: 30%;
+  text-align: center;
+}
+
+.level-anim {
+  position: absolute;
+  top: -59px;
+  left: -58px;
+  z-index: 9;
+  opacity: 1;
+}
