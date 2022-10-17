@@ -34,10 +34,10 @@ https://github.com/akshaychaudhari/ZombieSpawner
 
 
 ## Setting Up Enviorment:
--Insatlling Metamask wallet either via using chromium extentions [link](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
--Installing Node.js [Link](https://nodejs.org/en/download/)
--Installing Express 'npm install express --save'
--Installing ganache
+- Insatlling Metamask wallet either via using chromium extentions [link](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
+- Installing Node.js [Link](https://nodejs.org/en/download/)
+- Installing Express 'npm install express --save'
+- Installing ganache
 
 ## 1. Clone/download the repos 
 
