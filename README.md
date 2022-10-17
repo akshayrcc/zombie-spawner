@@ -49,10 +49,10 @@ Check wheather contracts are visible on ganache and if not make sure they are in
 once the initialization is done make sure truffle configuration is correct with the ganache localhost.
 
 ## 4. Connect development blockchain accounts to Metamask
-     - Use any of the accounts private key and import it into metamask to use the development accounts
-     - For the "Network Name" field enter "localhost".
-     - For the "New RPC URL" field enter "http://127.0.0.1:7545".
-     - For the chain ID enter "5777". Then click save.
+      Use any of the accounts private key and import it into metamask to use the development accounts
+      For the "Network Name" field enter "localhost".
+      For the "New RPC URL" field enter "http://127.0.0.1:5000".
+      For the chain ID enter "5777". Then click save.
    
 ## 5. Test Run:
 Run the test using node js you can connect to localhost using 127.0.0.1:5000 make sure you run the 'node server.js'
