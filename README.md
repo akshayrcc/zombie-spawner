@@ -9,7 +9,7 @@
 
 1. Akshay Ram Chaudhari : akshayrc@csu.fullerton.edu (885869990)
 2. Sambhaji Ippar: Sambhaji@csu.fullerton.edu (885865899)
-3. Onkar : onkar.muttemwar@csu.fullerton.edu (885199950)
+3. Onkar Muttemwar : onkar.muttemwar@csu.fullerton.edu (885199950)
 4. Meet Turakhia : meet.turakhia@csu.fullerton.edu (885210237)
 
 ## Professor
