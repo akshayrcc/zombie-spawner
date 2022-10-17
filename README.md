@@ -18,7 +18,7 @@ Prof. Wenlin Han, CSU Fullerton: whan@fullerton.edu
 ## Additional Work
 
 - Updated the user interface.
-- Added NFT on the Marketplace[Link](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/102442290240268602428752935257933529200693348925534355824082065762530734637057)
+- Added NFT on the Marketplace [Link](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/102442290240268602428752935257933529200693348925534355824082065762530734637057)
 -
 
 
