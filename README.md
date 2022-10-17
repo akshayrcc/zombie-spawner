@@ -27,16 +27,16 @@ https://github.com/akshaychaudhari/ZombieSpawner
 
 # Instructions:
 
-#Requirments:
--Metamask account 
--Node.js 
--Express
+# Requirments:
+- Metamask account 
+- Node.js 
+- Express
 
 
 ## Setting Up Enviorment:
 - Insatlling Metamask wallet either via using chromium extentions [link](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 - Installing Node.js [Link](https://nodejs.org/en/download/)
-- Installing Express 'npm install express --save'
+- Installing Express ```npm install express --save```
 - Installing ganache
 
 ## 1. Clone/download the repos 
@@ -55,6 +55,6 @@ once the initialization is done make sure truffle configuration is correct with 
       For the chain ID enter "5777". Then click save.
    
 ## 5. Test Run:
-Run the test using node js you can connect to localhost using 127.0.0.1:5000 make sure you run the 'node server.js'
+Run the test using node js you can connect to localhost using  ```127.0.0.1:5000``` make sure you run the 'node server.js'
       
       
